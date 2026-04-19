@@ -12,6 +12,12 @@
   <header>
     <nav>
       <div class="nav-logo">Urban Tails</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-overlay"></div>
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="services.html">SERVICES</a></li>
@@ -24,95 +30,124 @@
 
   <main>
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p class="subtitle">Let's meet your urban pet</p>
+      <h2>Get in Touch</h2>
+      <p class="subtitle">Book a meet &amp; greet or send us your feedback</p>
 
-      <div class="contact-grid">
-        
-        
-        <form class="contact-form" action="#" method="POST">
-          <h3>Book a Meet &amp; Greet</h3>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="e.g. Thabo Molefe"/>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com"/>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+267 7X XXX XXX"/>
-          </div>
-          <div class="form-group">
-            <label for="pet">Pet Name &amp; Breed</label>
-            <input type="text" id="pet" name="pet" placeholder="e.g. Max – Labrador"/>
-          </div>
-          <div class="form-group">
-            <label for="service">Service Required</label>
-            <select id="service" name="service">
-              <option value="">Select a service…</option>
-              <option>Premium Pet Sitting – Overnight</option>
-              <option>Premium Pet Sitting – Midday Visit</option>
-              <option>Dog Walking – 30 min</option>
-              <option>Dog Walking – 60 min</option>
-              <option>The Doorman Service</option>
-              <option>Boutique Product Enquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us more about your pet and your needs…"></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message</button>
-        </form>
+      <div class="contact-layout">
 
-        
-        <aside class="contact-info">
+        <!-- Left: Contact Info Panel -->
+        <aside class="contact-info-panel">
           <h3>Contact Information</h3>
-          <div class="info-item">
-            <span class="info-icon">📍</span>
-            <div class="info-text">
-              <strong>Location</strong>
-              <span>Gaborone, Botswana</span>
-            </div>
+
+          <div class="contact-info-item">
+            <span class="label">Location</span>
+            <span class="value">Gaborone, Botswana</span>
           </div>
-          <div class="info-item">
-            <span class="info-icon">📞</span>
-            <div class="info-text">
-              <strong>Phone</strong>
-              <span>+267 77 483 031</span>
-            </div>
+
+          <div class="contact-info-item">
+            <span class="label">Phone</span>
+            <span class="value"><a href="tel:+26777483031">+267 77 48 3031</a></span>
           </div>
-          <div class="info-item">
-            <span class="info-icon">✉️</span>
-            <div class="info-text">
-              <strong>Email</strong>
-              <span>urban@tails.co.bw</span>
-            </div>
+
+          <div class="contact-info-item">
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:urban@tails.co.bw">urban@tails.co.bw</a></span>
           </div>
-          <div class="info-item">
-            <span class="info-icon">🕐</span>
-            <div class="info-text">
-              <strong>Business Hours</strong>
-              <table class="hours-table">
-                <tr><td>Mon – Fri</td><td>8am – 7pm</td></tr>
-                <tr><td>Saturday</td><td>9am – 5pm</td></tr>
-                <tr><td>Sunday</td><td>Closed</td></tr>
-              </table>
+
+          <div class="contact-info-item">
+            <span class="label">Business Hours</span>
+            <table class="hours-table">
+              <tr>
+                <td>Monday – Friday</td>
+                <td>07:00 – 19:00</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>08:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>09:00 – 14:00</td>
+              </tr>
+              <tr>
+                <td>Holidays</td>
+                <td>By arrangement</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="label">Follow Us</span>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
             </div>
           </div>
         </aside>
 
-      </div>
+        <!-- Right: Combined Form -->
+        <div class="contact-form-panel">
+          <h3>Booking &amp; Feedback</h3>
+          <p class="form-subtitle">Tell us about your pet and what you need — we'll get back to you within 24 hours.</p>
 
-      <div class="social-row">
-        <h4>Follow Us @urbanTailsBW</h4>
-        <div class="social-links">
-          <a href="#" class="social-btn">📸 Instagram</a>
-          <a href="#" class="social-btn">👍 Facebook</a>
-          <a href="#" class="social-btn">🎵 TikTok</a>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Katlego Isaac" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +267 77 48 3031" required/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="e.g. you@email.com" required/>
+              </div>
+              <div class="form-group">
+                <label for="pet">Pet's Name</label>
+                <input type="text" id="pet" name="pet" placeholder="e.g. Simba"/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full">
+                <label for="service">Service Interested In</label>
+                <div class="select-wrapper">
+                  <select id="service" name="service">
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="overnight">Premium Pet Sitting — Overnight (P400/night)</option>
+                    <option value="midday">Premium Pet Sitting — Midday Visit (P120/visit)</option>
+                    <option value="walk30">Dog Walking — 30 min (P100)</option>
+                    <option value="walk60">Dog Walking — 60 min (P150)</option>
+                    <option value="doorman">The Doorman Service — Annual (P250/year)</option>
+                    <option value="boutique">Boutique Product Enquiry</option>
+                    <option value="feedback">General Feedback</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full">
+                <label for="message">Message / Feedback</label>
+                <textarea id="message" name="message" placeholder="Tell us about your pet, any special needs, dates you need care, or anything else you'd like to share..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-primary">SEND MESSAGE</button>
+            </div>
+          </form>
         </div>
+
       </div>
     </section>
   </main>
@@ -138,8 +173,93 @@
         <address>+267 77 48 3031<br/>urban@tails.co.bw<br/>Gaborone, Botswana</address>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 Urban Tails — All Rights Reserved</div>
+    <div class="footer-bottom">&copy; 2026 Urban Tails — All Rights Reserved</div>
   </footer>
+
+  <!-- Mobile nav toggle script -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.nav-overlay');
+
+    function openNav() {
+      toggle.classList.add('open');
+      links.classList.add('open');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNav() {
+      toggle.classList.remove('open');
+      links.classList.remove('open');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    toggle.addEventListener('click', () => {
+      links.classList.contains('open') ? closeNav() : openNav();
+    });
+
+    overlay.addEventListener('click', closeNav);
+
+    links.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
+    });
+
+    // Sticky nav shadow on scroll
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    // Contact form handling
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name  = form.name.value.trim();
+      const phone = form.phone.value.trim();
+      const email = form.email.value.trim();
+
+      if (!name || !phone || !email) {
+        // Highlight empty required fields
+        [form.name, form.phone, form.email].forEach(input => {
+          if (!input.value.trim()) {
+            input.style.borderColor = '#D4574E';
+            input.addEventListener('input', () => {
+              input.style.borderColor = '';
+            }, { once: true });
+          }
+        });
+        return;
+      }
+
+      // Simple email check
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        form.email.style.borderColor = '#D4574E';
+        form.email.addEventListener('input', () => {
+          form.email.style.borderColor = '';
+        }, { once: true });
+        return;
+      }
+
+      // Success state — replace button briefly
+      const btn = form.querySelector('button[type="submit"]');
+      const original = btn.textContent;
+      btn.textContent = 'SENT SUCCESSFULLY';
+      btn.style.background = '#5A8A5E';
+      btn.style.boxShadow = '0 4px 20px rgba(90,138,94,0.3)';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.style.background = '';
+        btn.style.boxShadow = '';
+        btn.disabled = false;
+        form.reset();
+      }, 3000);
+    });
+  </script>
 
 </body>
 </html>
