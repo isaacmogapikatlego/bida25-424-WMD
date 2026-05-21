@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="About Urban Tails - our story, team and mission for premium pet care in Gaborone"/>
   <title>Urban Tails – About</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -23,74 +25,90 @@
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Urban Tails</h2>
+    <section id="about" class="py-5">
+      <section class="container">
+        <h2 class="text-center mb-5">About Urban Tails</h2>
 
-      <article class="story">
-        <p>Gaborone is changing. More young professionals have more disposable incomes, more apartments and more people treating their pets like actual children. But there is a gap in market in this industry of pet care.</p>
-        <p>Options in Botswana are either informal neighbourhood arrangements with little accountability or traditional kennels that feel institutional and impersonal. Nobody is doing luxury or going above and beyond to make sure that our pets are treated like family. <strong>Urban Tails was founded to own that space.</strong></p>
-      </article>
+        <article class="story mb-5">
+          <p>Gaborone is changing. More young professionals have more disposable incomes, more apartments and more people treating their pets like actual children. But there is a gap in market in this industry of pet care.</p>
+          <p>Options in Botswana are either informal neighbourhood arrangements with little accountability or traditional kennels that feel institutional and impersonal. Nobody is doing luxury or going above and beyond to make sure that our pets are treated like family. <strong>Urban Tails was founded to own that space.</strong></p>
+        </article>
 
-      <section class="about-services">
-        <article class="service-item">
-          <h4>Premium Pet Sitting</h4>
-          <p>Real care overnight stays where sitter sleeps on your couch, so your anxious dog is never alone.</p>
-        </article>
-        <article class="service-item">
-          <h4>Luxury Product Boutique</h4>
-          <p>Well-curated high-end products that are highly unavailable in Gaborone — products that belong in a design magazine.</p>
-        </article>
-        <article class="service-item">
-          <h4>The Doorman Service</h4>
-          <p>For an annual fee of P250, Urban Tails securely stores your house keys when you are out of town.</p>
-        </article>
-      </section>
-
-      <section class="team-section">
-        <h3>Our Team</h3>
-        <section class="team-grid">
-          <article class="member">
-            <figure>
-              <img src="images/katlego-founder.jpg" alt="Katlego Isaac">
-            </figure>
-            <h4>Katlego Isaac</h4>
-            <p class="role">Founder</p>
+        <section class="row g-4 mb-5 justify-content-center">
+          <article class="col-md-4">
+            <article class="service-item">
+              <h4>Premium Pet Sitting</h4>
+              <p>Real care overnight stays where sitter sleeps on your couch, so your anxious dog is never alone.</p>
+            </article>
           </article>
-          <article class="member">
-            <figure>
-              <img src="images/team-sitter.jpg" alt="Team Sitter">
-            </figure>
-            <h4>Team Sitter</h4>
-            <p class="role">Pet Sitter</p>
+          <article class="col-md-4">
+            <article class="service-item">
+              <h4>Luxury Product Boutique</h4>
+              <p>Well-curated high-end products that are highly unavailable in Gaborone — products that belong in a design magazine.</p>
+            </article>
           </article>
+          <article class="col-md-4">
+            <article class="service-item">
+              <h4>The Doorman Service</h4>
+              <p>For an annual fee of P250, Urban Tails securely stores your house keys when you are out of town.</p>
+            </article>
+          </article>
+        </section>
+
+        <section class="team-section">
+          <h3>Our Team</h3>
+          <section class="row g-4 justify-content-center">
+            <article class="col-md-4">
+              <article class="member">
+                <figure>
+                  <img src="images/katlego-founder.jpeg" alt="Portrait photo of Katlego Isaac, founder of Urban Tails" width="300" height="300"/>
+                </figure>
+                <h4>Katlego Isaac</h4>
+                <p class="role">Founder</p>
+              </article>
+            </article>
+            <article class="col-md-4">
+              <article class="member">
+                <figure>
+                  <img src="images/team-sitter.jpeg" alt="Portrait photo of an Urban Tails pet sitter" width="300" height="300"/>
+                </figure>
+                <h4>Team Sitter</h4>
+                <p class="role">Pet Sitter</p>
+              </article>
+            </article>
+          </section>
         </section>
       </section>
     </section>
   </main>
 
   <footer>
-    <section>
-      <article>
-        <h3>Urban Tails</h3>
-        <p>Luxury pet care for city pets.<br/>Gaborone, Botswana.</p>
-      </article>
-      <article>
-        <h4>Explore</h4>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="boutique.html">Boutique</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </article>
-      <article>
-        <h4>Contact</h4>
-        <address>+267 77 48 3031<br/>urban@tails.co.bw<br/>Gaborone, Botswana</address>
-      </article>
+    <section class="container">
+      <section class="row g-4 mb-4">
+        <article class="col-md-4">
+          <h3>Urban Tails</h3>
+          <p>Luxury pet care for city pets.<br/>Gaborone, Botswana.</p>
+        </article>
+        <article class="col-md-4">
+          <h4>Explore</h4>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </article>
+        <article class="col-md-4">
+          <h4>Contact</h4>
+          <address>+267 77 48 3031<br/>urban@tails.co.bw<br/>Gaborone, Botswana</address>
+        </article>
+      </section>
+      <p class="bottom text-center">© 2026 Urban Tails — All Rights Reserved</p>
     </section>
-    <div class="bottom">© 2026 Urban Tails — All Rights Reserved</div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

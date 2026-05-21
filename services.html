@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Urban Tails services - Premium pet sitting, dog walking and doorman key storage in Gaborone"/>
   <title>Urban Tails – Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -23,75 +25,99 @@
   </header>
 
   <main>
-    <section id="services">
-      <h2>Our Services</h2>
-      <p class="subtitle">Everything your city pet deserves</p>
+    <section id="services" class="py-5">
+      <section class="container">
+        <h2 class="text-center">Our Services</h2>
+        <p class="subtitle">Everything your city pet deserves</p>
 
-      <section class="service-block">
-        <header>
-          <h3>Premium Pet Sitting</h3>
-          <p>Overnight stays — sitter sleeps on your couch</p>
-          <p>Midday visits — real playtime, not just feeding</p>
-          <p>GPS-tracked walks — routes sent to your phone</p>
-          <span class="price-tag">Overnight P400/night</span>
-          <span class="price-tag" style="margin-left:8px;">Midday P120/visit</span>
-        </header>
-        <figure>
-          <img src="images/pet-sitting-couch" alt="Dog resting on couch">
-        </figure>
+        <section class="row align-items-center g-4 mb-5 service-block">
+          <article class="col-md-6">
+            <header>
+              <h3>Premium Pet Sitting</h3>
+              <p>Overnight stays — sitter sleeps on your couch</p>
+              <p>Midday visits — real playtime, not just feeding</p>
+              <p>GPS-tracked walks — routes sent to your phone</p>
+              <p class="mt-3">
+                <span class="price-tag">Overnight P400/night</span>
+                <span class="price-tag" style="margin-left:8px;">Midday P120/visit</span>
+              </p>
+            </header>
+          </article>
+          <article class="col-md-6">
+            <figure>
+              <img src="images/pet-sitting-couch.jpg" alt="Dog resting comfortably on a couch at home" width="600" height="400"/>
+            </figure>
+          </article>
+        </section>
+
+        <section class="row align-items-center g-4 mb-5 service-block flex-md-row-reverse">
+          <article class="col-md-6">
+            <header>
+              <h3>Dog Walking</h3>
+              <p>30 min walk — fresh water &amp; brushes included</p>
+              <p>60 min walk — hydration &amp; paw cleaning inclusive</p>
+              <p class="mt-3">
+                <span class="price-tag">30 min – P100</span>
+                <span class="price-tag" style="margin-left:8px;">60 min – P150</span>
+              </p>
+            </header>
+          </article>
+          <article class="col-md-6">
+            <figure>
+              <img src="images/dog-walking.jpg" alt="Person walking dog on a leash outdoors" width="600" height="400"/>
+            </figure>
+          </article>
+        </section>
+
+        <article class="doorman-card">
+          <section class="row align-items-center g-4">
+            <article class="col-md-6">
+              <header>
+                <h3>The Doorman Service</h3>
+                <span class="annual">Annual Fee: P250</span>
+                <p>Secure key storage</p>
+                <p>Same-day booking priority</p>
+                <p>Peace of mind when you're away</p>
+              </header>
+            </article>
+            <article class="col-md-6">
+              <figure>
+                <img src="images/doorman-keys.jpg" alt="House keys on a table representing secure key storage" width="600" height="400"/>
+              </figure>
+            </article>
+          </section>
+        </article>
       </section>
-
-      <section class="service-block reverse">
-        <header>
-          <h3>Dog Walking</h3>
-          <p>30 min walk — fresh water &amp; brushes included</p>
-          <p>60 min walk — hydration &amp; paw cleaning inclusive</p>
-          <span class="price-tag">30 min – P100</span>
-          <span class="price-tag" style="margin-left:8px;">60 min – P150</span>
-        </header>
-        <figure>
-          <img src="images/dog-walking.jpg" alt="Dog walking on leash">
-        </figure>
-      </section>
-
-      <article class="doorman-card">
-        <header>
-          <h3>The Doorman Service</h3>
-          <span class="annual">Annual Fee: P250</span>
-          <p>Secure key storage</p>
-          <p>Same-day booking priority</p>
-          <p>Peace of mind when you're away</p>
-        </header>
-        <figure>
-          <img src="images/doorman-keys.jpg" alt="House keys">
-        </figure>
-      </article>
     </section>
   </main>
 
   <footer>
-    <section>
-      <article>
-        <h3>Urban Tails</h3>
-        <p>Luxury pet care for city pets.<br/>Gaborone, Botswana.</p>
-      </article>
-      <article>
-        <h4>Explore</h4>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="boutique.html">Boutique</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </article>
-      <article>
-        <h4>Contact</h4>
-        <address>+267 77 48 3031<br/>urban@tails.co.bw<br/>Gaborone, Botswana</address>
-      </article>
+    <section class="container">
+      <section class="row g-4 mb-4">
+        <article class="col-md-4">
+          <h3>Urban Tails</h3>
+          <p>Luxury pet care for city pets.<br/>Gaborone, Botswana.</p>
+        </article>
+        <article class="col-md-4">
+          <h4>Explore</h4>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </article>
+        <article class="col-md-4">
+          <h4>Contact</h4>
+          <address>+267 77 48 3031<br/>urban@tails.co.bw<br/>Gaborone, Botswana</address>
+        </article>
+      </section>
+      <p class="bottom text-center">© 2026 Urban Tails — All Rights Reserved</p>
     </section>
-    <div class="bottom">© 2026 Urban Tails — All Rights Reserved</div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
